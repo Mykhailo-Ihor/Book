@@ -18,7 +18,7 @@ public:
 	void setAuthor(string author);
 	void setName(string name);
 	void setYear(unsigned year);
-	void print();
+	void print() const;
 	void WriteTo(ostream& out) const;
 	void ReadFrom(istream& in);
 };

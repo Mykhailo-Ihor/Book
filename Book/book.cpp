@@ -37,7 +37,7 @@ void Book::setYear(unsigned year)
 	book_year = year;
 }
 
-void Book::print()
+void Book::print() const
 {
 	cout << "Author: " << getAuthor()
 	<< " -- Book name \"" << getName() << "\""
@@ -160,6 +160,7 @@ void removeList(List* P)
 void WriteToFile(Book* arr, size_t n, string filename)
 {
 	ofstream fout(filename);
+	fout << n << '\n';
 	for (size_t i = 0; i < n; ++i)
 	{
 		fout << arr[i];
