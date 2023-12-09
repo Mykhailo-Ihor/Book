@@ -39,9 +39,9 @@ void Book::setYear(unsigned year)
 
 void Book::print() const
 {
-	cout << "Author: " << getAuthor()
-	<< " -- Book name \"" << getName() << "\""
-	<< " -- Year of publication - " << getYear();
+	cout << "Author: " << book_author
+	<< " -- Book name \"" << book_name << "\""
+	<< " -- Year of publication - " << book_year;
 }
 
 void Book::WriteTo(ostream& out) const
